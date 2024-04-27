@@ -1,0 +1,125 @@
+[gd_scene load_steps=10 format=3 uid="uid://c4n45cyjkthmd"]
+
+[ext_resource type="Script" path="res://Scripts/UI/model_select.gd" id="1_vocrw"]
+[ext_resource type="Script" path="res://Scripts/UI/ChatUIController.gd" id="2_d6kx8"]
+[ext_resource type="Texture2D" uid="uid://b2k5pm8c0oaqn" path="res://Textures/loading-anim.png" id="3_y1tll"]
+[ext_resource type="Texture2D" uid="uid://c0a0oti18l3qo" path="res://Textures/avatar.png" id="4_6dylm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gra71"]
+atlas = ExtResource("3_y1tll")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgmkh"]
+atlas = ExtResource("3_y1tll")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2w7mu"]
+atlas = ExtResource("3_y1tll")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysqrp"]
+atlas = ExtResource("3_y1tll")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qpwg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gra71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgmkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2w7mu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysqrp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="TestAI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackgroundColor" type="ColorRect" parent="UI"]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.231373, 0.176471, 0.333333, 1)
+
+[node name="SelectModel" type="OptionButton" parent="UI"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 304.0
+offset_bottom = 112.0
+script = ExtResource("1_vocrw")
+
+[node name="ChatUI" type="Node" parent="UI"]
+script = ExtResource("2_d6kx8")
+
+[node name="ColorRect" type="ColorRect" parent="UI/ChatUI"]
+offset_left = 320.0
+offset_top = 448.0
+offset_right = 960.0
+offset_bottom = 576.0
+color = Color(0.168627, 0.129412, 0.235294, 1)
+
+[node name="ChatBox" type="ScrollContainer" parent="UI/ChatUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 328.0
+offset_top = 456.0
+offset_right = -328.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/ChatUI/ChatBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UserPrompt" type="TextEdit" parent="UI/ChatUI"]
+offset_left = 320.0
+offset_top = 616.0
+offset_right = 960.0
+offset_bottom = 680.0
+placeholder_text = "Write a message!"
+
+[node name="SendButton" type="Button" parent="UI/ChatUI"]
+offset_left = 976.0
+offset_top = 616.0
+offset_right = 1088.0
+offset_bottom = 680.0
+text = "Send!"
+
+[node name="LoadingAnimation" type="AnimatedSprite2D" parent="UI/ChatUI"]
+visible = false
+position = Vector2(640, 512)
+sprite_frames = SubResource("SpriteFrames_0qpwg")
+autoplay = "default"
+frame = 1
+frame_progress = 0.629453
+
+[node name="Avatar" type="Sprite2D" parent="."]
+position = Vector2(640, 256)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_6dylm")
+
+[connection signal="pressed" from="UI/ChatUI/SendButton" to="UI/ChatUI" method="_on_send_button_pressed"]
