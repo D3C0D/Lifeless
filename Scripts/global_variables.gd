@@ -8,9 +8,8 @@ var port = "11434"
 var path_list = "/api/tags"
 var path_generate = "/api/generate"
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	print(get_tree().current_scene.name)
+# Navigation and Tiles
+var tile_size = 32
 
 # Debug tools
 func _process(_delta):

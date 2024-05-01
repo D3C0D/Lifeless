@@ -55,6 +55,12 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 22
 text = "Test AI"
 
+[node name="TestMovement" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Test Movement"
+
 [node name="CenterContainer2" type="CenterContainer" parent="."]
 layout_mode = 0
 offset_right = 1280.0
@@ -68,3 +74,4 @@ text = "Debugging Menu"
 [connection signal="pressed" from="CenterContainer/VBoxContainer/LifelessViewer" to="." method="_on_lifeless_viewer_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/LifelessCreator" to="." method="_on_lifeless_creator_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/TestAI" to="." method="_on_test_ai_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/TestMovement" to="." method="_on_test_movement_pressed"]

@@ -3,11 +3,13 @@ extends Node
 # Setting up variables to send the requests
 @onready var user_prompt = $UserPrompt
 @onready var chat_box = $ChatBox/RichTextLabel
-@onready var model_select = $"../SelectModel"
+@onready var model_select = $SelectModel
 @onready var context = []
+@onready var system_description = []
 
 # Loading Animation
 @onready var loading_animation = $LoadingAnimation
+
 
 func _on_send_button_pressed():
 	# Create the HTTPRequest and add it as a child
@@ -19,11 +21,11 @@ func _on_send_button_pressed():
 	var endpoint = global.address + ":" + global.port + global.path_generate
 	# Prepare parameters to send
 	var parameters = {
-		"model": model_select.get_item_text(model_select.get_selected_id()),
-		"prompt": user_prompt.text,
-		"context": context,
-		"stream": false
-	}
+			"model": model_select.get_item_text(model_select.get_selected_id()),
+			"prompt": user_prompt.text,
+			"context": context,
+			"stream": false
+		}
 	
 	# Prepare headers as a PackedArray
 	var headers = [
@@ -46,7 +48,4 @@ func _http_request_completed(_result, response_code, _headers, body):
 		context = body_dictionary.get("context")
 	else:
 		# Request failed, handle the error
-		print("Request failed. Response code:", body.get_string_from_utf8())
-
-func get_response_chat():
-	pass
+		print("Request failed. Response code:", response_code)

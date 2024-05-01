@@ -1,12 +1,12 @@
-extends Area2D
+extends Node2D
 
 class_name Lifeless
 
 # Personality Variables
 var LifelessData = {
-	"Name": "",
-	"Surname": "",
-	"Description": ""
+	"Name": "Shallan",
+	"Surname": "Davar",
+	"Description": "I am Shallan, a knight radiant and a scholar"
 }
 
 # Check to Know where to find the files
@@ -17,8 +17,9 @@ var lifeless_skin = LPCAnimatedSprite2D.new()
 
 func _ready():
 	add_child(lifeless_skin)
+	_set_lifeless_skin()
 
-# Called when the node enters the scene tree for the first time.
+# Called when you want to set the skin
 func _set_lifeless_skin(_skin = false):
 	# If no skin is passed as parameter then load from disk using the lifeless data
 	if not _skin:
@@ -28,7 +29,6 @@ func _set_lifeless_skin(_skin = false):
 		(lifeless_skin as LPCAnimatedSprite2D).SpriteSheets = [skin_spritesheet]
 		(lifeless_skin as LPCAnimatedSprite2D).LoadAnimations()
 	else:  # If a skin is passed, override
-		print("uzumaki naruto")
 		var skin_spritesheet = LPCSpriteSheet.new()
 		(skin_spritesheet as LPCSpriteSheet).SpriteSheet = _skin
 		(skin_spritesheet as LPCSpriteSheet).Name = "Default"

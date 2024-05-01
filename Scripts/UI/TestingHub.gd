@@ -17,3 +17,7 @@ func _on_lifeless_creator_pressed():
 
 func _on_test_ai_pressed():
 	get_tree().change_scene_to_file("res://Scenes/TestAI.tscn")
+
+
+func _on_test_movement_pressed():
+	get_tree().change_scene_to_file("res://Scenes/Simulation.tscn")

@@ -5,7 +5,6 @@ var current_lifeless : Lifeless
 # UI references
 @onready var name_edit = $NameEdit
 @onready var surname_edit = $SurnameEdit
-@onready var description_edit = $DescriptionEdit
 @onready var error_notif = $ErrorNotification
 @onready var error_notif_timer = $ErrorNotification/Timer
 @onready var how_to_label = $BackgroundColor/CenterContainer/LifelessView/Howtolable
@@ -97,7 +96,6 @@ func _on_save_lifeless_pressed():
 	var temp_dictionary = {
 		"Name": name_edit.text,
 		"Surname": surname_edit.text,
-		"Description": description_edit.text
 	}
 
 	# Open file json to write the data
@@ -110,3 +108,7 @@ func _on_save_lifeless_pressed():
 func _on_select_animation_item_selected(index):
 	if current_lifeless:
 		(current_lifeless as Lifeless).lifeless_skin.play(index)
+
+
+func _on_open_lpc_creator_pressed():
+	OS.shell_open("https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/")

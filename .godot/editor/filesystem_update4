@@ -1,3 +1,7 @@
 res://Scripts/UI/LifelessCreator.gd
-res://Scripts/Lifeless Scripts/LifelessViewerUI.gd
-res://Scenes/LifelessViewer.tscn
+res://Scenes/Simulation.tscn
+res://Scenes/TestingHub.tscn
+res://Scripts/Simulation/Player/PlayerController.gd
+res://Scripts/Simulation/System/HeraldSystem.gd
+res://Scripts/Simulation/System/NavigationSystem.gd
+res://Scripts/Simulation/System/SimulationHypervisor.gd

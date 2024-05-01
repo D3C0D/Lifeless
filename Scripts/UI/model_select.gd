@@ -9,7 +9,6 @@ func _ready():
 	
 	# Prepare the endpoint and make the reques
 	var endpoint = global.address + ":" + global.port + global.path_list
-	print("hello")
 	http_request.request(endpoint)
 
 func _http_request_completed(_result, response_code, _headers, body):
@@ -19,7 +18,6 @@ func _http_request_completed(_result, response_code, _headers, body):
 		var models_list = get_model_names(JSON.parse_string(body_data))
 		for model_name in models_list:
 			self.add_item(model_name)
-		print("Request failed. Response code:", body_data)
 	else:
 		# Request failed, handle the error
 		print("Request failed. Response code:", response_code)
