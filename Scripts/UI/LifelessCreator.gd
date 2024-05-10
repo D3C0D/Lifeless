@@ -5,6 +5,7 @@ var current_lifeless : Lifeless
 # UI references
 @onready var name_edit = $NameEdit
 @onready var surname_edit = $SurnameEdit
+@onready var description_edit = $DescriptionEditScroll/DescriptionEdit
 @onready var error_notif = $ErrorNotification
 @onready var error_notif_timer = $ErrorNotification/Timer
 @onready var how_to_label = $BackgroundColor/CenterContainer/LifelessView/Howtolable
@@ -36,7 +37,6 @@ func create_lifeless(temp_texture):
 	
 	# Prompt to create the skin
 	(current_lifeless as Lifeless)._set_lifeless_skin(temp_texture)
-	print(center_of_screen)
 	(current_lifeless as Lifeless).position = center_of_screen
 	(current_lifeless as Lifeless).scale = scale_factor
 	how_to_label.visible = false
@@ -53,8 +53,9 @@ func _on_open_sprite_sheet_folder_pressed():
 		_send_notification("You must add a name and Surname first")
 		return
 	var temp_dir = user_created_path + name_edit.text + "_" + surname_edit.text
+	print(OS.get_user_data_dir(), "    ", temp_dir)
 	if not DirAccess.dir_exists_absolute(temp_dir):
-		DirAccess.make_dir_absolute(temp_dir)
+		DirAccess.make_dir_recursive_absolute(temp_dir)
 	OS.shell_open(ProjectSettings.globalize_path(temp_dir))
 
 
@@ -90,12 +91,13 @@ func _on_save_lifeless_pressed():
 	var file_name = name_edit.text + "_" + surname_edit.text + ".json"
 	# Check directory exist, if not, create
 	if not DirAccess.dir_exists_absolute(temp_dir):
-		DirAccess.make_dir_absolute(temp_dir)
+		DirAccess.make_dir_recursive_absolute(temp_dir)
 	
 	# Create a temporary Dictionary to parse the Json file
 	var temp_dictionary = {
 		"Name": name_edit.text,
 		"Surname": surname_edit.text,
+		"Description": description_edit.text
 	}
 
 	# Open file json to write the data

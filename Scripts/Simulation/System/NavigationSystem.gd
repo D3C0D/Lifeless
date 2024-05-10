@@ -17,8 +17,8 @@ var navigation_grid = AStarGrid2D.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():	
 	# Connect nav system signals
-	Heral.request_navigation_path.connect(_handle_request_navigation_path)
-	Heral.request_navigation_clear_path.connect(_handle_request_navigation_clear_path)
+	Herald.request_navigation_path.connect(_handle_request_navigation_path)
+	Herald.request_navigation_clear_path.connect(_handle_request_navigation_clear_path)
 	tile_map = get_tree().root.get_node("Simulation/TileMap")
 	# Setup nav grid
 	_setup_nav_grid()
@@ -52,15 +52,15 @@ func _setup_nav_grid():
 	tile_map.add_layer(path_layer)
 
 	# Update the parameters of the AStar
-	navigation_grid.region = Rect2i(0,0,18,12)
-	navigation_grid.cell_size = Vector2i(32,32)
+	navigation_grid.region = tile_map.get_used_rect()
+	navigation_grid.cell_size = Vector2i(global.tile_size, global.tile_size)
 	navigation_grid.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_NEVER
 	navigation_grid.update()
 	_update_solid_cells()
 
 # <-----> FUNCTIONS TO HANLDE SINGNALS <----->
 func _handle_request_navigation_path(emiter, current_point, target_point): 
-	Heral.return_navigation_path.emit(emiter, _generate_new_path(current_point, target_point))
+	Herald.return_navigation_path.emit(emiter, _generate_new_path(current_point, target_point))
 
 func _handle_request_navigation_clear_path():
 	# Clears path layer to draw the new path 

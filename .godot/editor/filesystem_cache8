@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714528763
+::res://::1715306748
+Amenohi Logo(640x360) .png::CompressedTexture2D::9113527930275621910::1601831684::1715145132::1::::<><>::
 Assets.md::TextFile::-1::1713977730::0::1::::<><>::
-icon.svg::CompressedTexture2D::6639990921805079174::1713898192::1713898199::1::::<><>::
+export_presets.cfg::TextFile::-1::1715197337::0::1::::<><>::
+LifelessICO.png::CompressedTexture2D::8007413543917608708::1715197229::1715197314::1::::<><>::
 README.md::TextFile::-1::1714177856::0::1::::<><>::
 ::res://addons/::1714012888
 ::res://addons/LPCAnimatedSprite/::1714101440
@@ -10,42 +12,60 @@ LPCAnimatedSprite.gd::GDScript::-1::1714012888::0::1::::<>EditorPlugin<>::
 LPCSpriteData.gd::GDScript::-1::1714012888::0::1::::LPCAnimationData<>RefCounted<>::
 LPCSpriteSheet.gd::GDScript::-1::1714012888::0::1::::LPCSpriteSheet<>Resource<>::
 plugin.cfg::TextFile::-1::1714012888::0::1::::<><>::
-::res://Lifeless Skins/::1714101609
-::res://Lifeless Skins/Shallan_Davar/::1714185332
+::res://Lifeless Skins/::1715142988
+::res://Lifeless Skins/Headless_Horseman/::1715128559
+Headless_Horseman.json::JSON::-1::1715128558::0::1::::<><>::
+Headless_Horseman.png::CompressedTexture2D::8103696517368450276::1715128558::1715128559::1::::<><>::
+Headless_Horseman.txt::TextFile::-1::1715128558::0::1::::<><>::
+::res://Lifeless Skins/Shallan_Davar/::1715142988
 Shallan_Davar.json::JSON::-1::1714185332::0::1::::<><>::
-Shallan_Davar.png::CompressedTexture2D::76908465872717893::1714101638::1714101648::1::::<><>::
-Shallan_Davar_Credits.txt::TextFile::-1::1714022228::0::1::::<><>::
-::res://Objects/::1714188034
+Shallan_Davar.png::CompressedTexture2D::7232313414051688872::1715142984::1715142988::1::::<><>::
+Shallan_Davar.txt::TextFile::-1::1715142984::0::1::::<><>::
+::res://Objects/::1715053135
 Lifeless.tscn::PackedScene::8678493243420464224::1714188034::0::1::::<><>::res://Scripts/Lifeless Scripts/LifelessController.gd
-::res://Scenes/::1714526301
-LifelessCreator.tscn::PackedScene::744700241328334499::1714182285::0::1::::<><>::res://Scripts/UI/LifelessCreator.gd
-LifelessViewer.tscn::PackedScene::4065500664748648396::1714441203::0::1::::<><>::res://Scripts/Lifeless Scripts/LifelessSpawner.gd<>res://Scripts/Lifeless Scripts/LifelessViewerUI.gd
-Simulation.tscn::PackedScene::4899325368836498538::1714526301::0::1::::<><>::res://Scripts/Simulation/System/SimulationHypervisor.gd<>uid://dvv6rsibifsvg::::res://Objects/Lifeless.tscn<>res://Scripts/Simulation/Player/PlayerController.gd<>res://Scripts/Simulation/System/NavigationSystem.gd<>uid://cw5thetjt6k1p::::res://Simulation Worlds/Test.png<>res://addons/LPCAnimatedSprite/LPCAnimatedSprite2D.gd<>uid://bdiw25x8trdt::::res://Lifeless Skins/Shallan_Davar/Shallan_Davar.png<>res://addons/LPCAnimatedSprite/LPCSpriteSheet.gd
-TestAI.tscn::PackedScene::6836969252844336399::1714441203::0::1::::<><>::res://Scripts/UI/model_select.gd<>res://Scripts/UI/ChatUIController.gd<>uid://b2k5pm8c0oaqn::::res://Textures/loading-anim.png<>uid://c0a0oti18l3qo::::res://Textures/avatar.png
-TestingHub.tscn::PackedScene::3526787286576123029::1714526301::0::1::::<><>::res://Scripts/UI/TestingHub.gd
+Sentient.tscn::PackedScene::2806269298196374537::1715053135::0::1::::<><>::res://Scripts/Simulation/Player/Sentient.gd<>uid://dvv6rsibifsvg::::res://Objects/Lifeless.tscn
+::res://Scenes/::1715306526
+LifelessCreator.tscn::PackedScene::744700241328334499::1715146499::0::1::::<><>::res://Scripts/UI/LifelessCreator.gd
+LifelessViewer.tscn::PackedScene::4065500664748648396::1715196998::0::1::::<><>::res://Scripts/Lifeless Scripts/LifelessSpawner.gd<>res://Scripts/Lifeless Scripts/LifelessViewerUI.gd
+Simulation.tscn::PackedScene::4899325368836498538::1715306526::0::1::::<><>::res://Scripts/Simulation/System/SimulationHypervisor.gd<>uid://dvv6rsibifsvg::::res://Objects/Lifeless.tscn<>res://Scripts/Simulation/Player/PlayerController.gd<>res://Scripts/Simulation/System/HumanInterfaceController.gd<>res://Scripts/Simulation/System/NavigationSystem.gd<>res://Scripts/Simulation/System/Observer.gd<>res://Scripts/UI/ChatUI.gd<>uid://cw5thetjt6k1p::::res://Simulation Worlds/Test/Test.png<>res://Scripts/UI/ConfigurationsUI.gd<>res://Scripts/UI/model_select.gd<>res://Scripts/UI/ListAvailableLifeless.gd<>res://Scripts/UI/SpawnLifelessUI.gd<>res://Scripts/Simulation/System/SentienceSystem.gd<>res://addons/LPCAnimatedSprite/LPCAnimatedSprite2D.gd<>uid://b2k5pm8c0oaqn::::res://Textures/loading-anim.png<>res://addons/LPCAnimatedSprite/LPCSpriteSheet.gd<>res://Scripts/Simulation/System/LifelessSpawnSystem.gd
+TestAI.tscn::PackedScene::6836969252844336399::1715144710::0::1::::<><>::res://Scripts/UI/model_select.gd<>res://Scripts/UI/ChatUIController.gd<>uid://b2k5pm8c0oaqn::::res://Textures/loading-anim.png<>uid://dmwo04lncseqd::::res://Textures/TestAvatar.png
+TestingHub.tscn::PackedScene::3526787286576123029::1715268875::0::1::::<><>::res://Scripts/UI/TestingHub.gd<>uid://gjtoo1jfbfvk::::res://Textures/github.png<>uid://bcpj5341bfax6::::res://Textures/linkedin.png
+::res://Scenes/ChatUI/::1714792276
+ChatMessage.tscn::PackedScene::6405553903142080075::1714792276::0::1::::<><>::
 ::res://Scripts/::1714442018
-global_variables.gd::GDScript::-1::1714522013::0::1::::<>Node<>::
-::res://Scripts/Lifeless Scripts/::1714185450
-LifelessController.gd::GDScript::-1::1714185700::0::1::::Lifeless<>Node2D<>::
-LifelessSpawner.gd::GDScript::-1::1714109813::0::1::::LifelessSpawner<>Node<>::
-LifelessViewerUI.gd::GDScript::-1::1714177043::0::1::::<>Control<>::
+global_variables.gd::GDScript::-1::1715266555::0::1::::<>Node<>::
+::res://Scripts/Lifeless Scripts/::1714589609
+LifelessController.gd::GDScript::-1::1714589619::0::1::::Lifeless<>Node2D<>::
+LifelessSpawner.gd::GDScript::-1::1715196995::0::1::::LifelessSpawner<>Node<>::
+LifelessViewerUI.gd::GDScript::-1::1714759164::0::1::::<>Control<>::
 ::res://Scripts/Simulation/::1714442029
-::res://Scripts/Simulation/Player/::1714445840
-PlayerController.gd::GDScript::-1::1714523284::0::1::::<>Area2D<>::
-::res://Scripts/Simulation/System/::1714523495
-HeraldSystem.gd::GDScript::-1::1714445229::0::1::::<>Node<>::
-NavigationSystem.gd::GDScript::-1::1714526296::0::1::::<>Node<>::
-SimulationHypervisor.gd::GDScript::-1::1714449166::0::1::::<>Node2D<>::
-::res://Scripts/UI/::1714258814
+::res://Scripts/Simulation/Player/::1715052841
+PlayerController.gd::GDScript::-1::1715225224::0::1::::<>Area2D<>::
+Sentient.gd::GDScript::-1::1715225234::0::1::::<>Area2D<>::
+::res://Scripts/Simulation/System/::1715124480
+HeraldSystem.gd::GDScript::-1::1715054515::0::1::::<>Node<>::
+HumanInterfaceController.gd::GDScript::-1::1715225245::0::1::::<>CanvasLayer<>::
+LifelessSpawnSystem.gd::GDScript::-1::1715225249::0::1::::<>Node<>::
+NavigationSystem.gd::GDScript::-1::1715225194::0::1::::<>Node<>::
+Observer.gd::GDScript::-1::1715225256::0::1::::<>Node2D<>::
+SentienceSystem.gd::GDScript::-1::1715305791::0::1::::<>Node<>::
+SimulationHypervisor.gd::GDScript::-1::1715267714::0::1::::<>Node2D<>::
+::res://Scripts/UI/::1715266311
+ChatUI.gd::GDScript::-1::1715306516::0::1::::<>Control<>::
 ChatUIController.gd::GDScript::-1::1714441196::0::1::::<>Node<>::
-LifelessCreator.gd::GDScript::-1::1714526013::0::1::::<>Control<>::
-ListLifelessOptions.gd::GDScript::-1::1714366627::0::1::::<>OptionButton<>::
+ConfigurationsUI.gd::GDScript::-1::1715305676::0::1::::<>Control<>::
+LifelessCreator.gd::GDScript::-1::1715131170::0::1::::<>Control<>::
+ListAvailableLifeless.gd::GDScript::-1::1715197093::0::1::::<>OptionButton<>::
+ListLifelessOptions.gd::GDScript::-1::1715195901::0::1::::<>OptionButton<>::
 model_select.gd::GDScript::-1::1714366011::0::1::::<>OptionButton<>::
-TestingHub.gd::GDScript::-1::1714523441::0::1::::<>Control<>::
-::res://Simulation Worlds/::1714201856
-Test.png::CompressedTexture2D::6380093623344829491::1714201856::1714201856::1::::<><>::
-::res://Simulation Worlds/Test/::1714201850
-::res://Textures/::1714182734
-avatar.png::CompressedTexture2D::6529106395798815302::1713977990::1713977990::1::::<><>::
+SpawnLifelessUI.gd::GDScript::-1::1715225303::0::1::::<>Control<>::
+TestingHub.gd::GDScript::-1::1715268594::0::1::::<>Control<>::
+::res://Simulation Worlds/::1715124458
+::res://Simulation Worlds/Test/::1715124458
+Test.png::CompressedTexture2D::6380093623344829491::1714201856::1715124458::1::::<><>::
+::res://Textures/::1715268859
 checker_bg.png::CompressedTexture2D::3178620023802343955::1714182734::1714182734::1::::<><>::
+github.png::CompressedTexture2D::440891861499426784::1715268859::1715268859::1::::<><>::
+linkedin.png::CompressedTexture2D::2558365580668094309::1715268402::1715268402::1::::<><>::
 loading-anim.png::CompressedTexture2D::4304012217535718061::1713939261::1713939261::1::::<><>::
+TestAvatar.png::CompressedTexture2D::8047840708835408323::1715144012::1715144015::1::::<><>::

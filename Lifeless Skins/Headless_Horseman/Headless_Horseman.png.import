@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw5thetjt6k1p"
-path="res://.godot/imported/Test.png-edaa34b9bcd3ccb6532f927e995d3aff.ctex"
+uid="uid://dnpqxyrp2bub1"
+path="res://.godot/imported/Headless_Horseman.png-25a720ff82f74bfff9cc20648162b9dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Simulation Worlds/Test.png"
-dest_files=["res://.godot/imported/Test.png-edaa34b9bcd3ccb6532f927e995d3aff.ctex"]
+source_file="res://Lifeless Skins/Headless_Horseman/Headless_Horseman.png"
+dest_files=["res://.godot/imported/Headless_Horseman.png-25a720ff82f74bfff9cc20648162b9dc.ctex"]
 
 [params]
 

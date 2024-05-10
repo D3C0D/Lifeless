@@ -20,20 +20,12 @@ func _ready():
 	_set_lifeless_skin()
 
 # Called when you want to set the skin
-func _set_lifeless_skin(_skin = false):
-	# If no skin is passed as parameter then load from disk using the lifeless data
-	if not _skin:
-		var skin_spritesheet = LPCSpriteSheet.new()
-		(skin_spritesheet as LPCSpriteSheet).SpriteSheet = _load_lifeless_skin()
-		(skin_spritesheet as LPCSpriteSheet).Name = LifelessData.get("Name") + "_" + LifelessData.get("Surname")
-		(lifeless_skin as LPCAnimatedSprite2D).SpriteSheets = [skin_spritesheet]
-		(lifeless_skin as LPCAnimatedSprite2D).LoadAnimations()
-	else:  # If a skin is passed, override
-		var skin_spritesheet = LPCSpriteSheet.new()
-		(skin_spritesheet as LPCSpriteSheet).SpriteSheet = _skin
-		(skin_spritesheet as LPCSpriteSheet).Name = "Default"
-		(lifeless_skin as LPCAnimatedSprite2D).SpriteSheets = [skin_spritesheet]
-		(lifeless_skin as LPCAnimatedSprite2D).LoadAnimations()
+func _set_lifeless_skin():
+	var skin_spritesheet = LPCSpriteSheet.new()
+	(skin_spritesheet as LPCSpriteSheet).SpriteSheet = _load_lifeless_skin()
+	(skin_spritesheet as LPCSpriteSheet).Name = LifelessData.get("Name") + "_" + LifelessData.get("Surname")
+	(lifeless_skin as LPCAnimatedSprite2D).SpriteSheets = [skin_spritesheet]
+	(lifeless_skin as LPCAnimatedSprite2D).LoadAnimations()
 
 func _load_lifeless_skin():
 	# select directory depending on user created
@@ -53,3 +45,6 @@ func _load_lifeless_skin():
 		# Load skin from disk
 		return load(directory + folder + file)
 	
+# Called to pass the animation down the line
+func play(animation: LPCAnimatedSprite2D.LPCAnimation):
+	lifeless_skin.play(animation)

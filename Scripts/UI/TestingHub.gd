@@ -21,3 +21,11 @@ func _on_test_ai_pressed():
 
 func _on_test_movement_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Simulation.tscn")
+
+
+func _on_git_hub_link_button_down():
+	OS.shell_open("https://github.com/D3C0D")
+
+
+func _on_linked_in_link_button_down():
+	OS.shell_open("https://www.linkedin.com/in/luis-chacon-mora/")

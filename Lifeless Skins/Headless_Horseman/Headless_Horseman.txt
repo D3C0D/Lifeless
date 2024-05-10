@@ -1,0 +1,55 @@
+Authors: drjamgo@hotmail.com, bluecarrot16, Benjamin K. Smith (BenCreating), Evert, Eliza Wyatt (ElizaWy), TheraHedwig, MuffinElZangano, Durrani, Johannes Sj?lund (wulax), Stephen Challener (Redshrike), Joshua Taylor, Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), Thane Brimhall (pennomi), laetissima, JaidynReiman, Nila122, Joe White
+
+- shadow/adult/shadow.png: by drjamgo@hotmail.com. License(s): CC0. 
+    - https://opengameart.org/content/shadow-for-lpc-sprite
+
+- body/bodies/male/lavender.png: by bluecarrot16, Benjamin K. Smith (BenCreating), Evert, Eliza Wyatt (ElizaWy), TheraHedwig, MuffinElZangano, Durrani, Johannes Sj?lund (wulax), Stephen Challener (Redshrike). License(s): CC-BY-SA 3.0, GPL 3.0. see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)
+    - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - https://opengameart.org/content/lpc-male-jumping-animation-by-durrani
+    - https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle
+    - https://opengameart.org/content/lpc-revised-character-basics
+
+- head/heads/jack/universal/jack.png: by bluecarrot16, Joshua Taylor. License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/fruit-and-veggie-inventory
+    - https://opengameart.org/content/lpc-folk
+
+- hat/formal/black.png: by bluecarrot16. License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-gentleman
+
+- neck/cravat/male/red.png: by bluecarrot16. License(s): CC-BY-SA 3.0. 
+    - https://opengameart.org/content/lpc-pirates
+
+- gloves/male/white.png: by Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16. License(s): OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - http://opengameart.org/content/lpc-clothing-updates
+
+- torso/clothes/longsleeve/male/formal.png: by bluecarrot16, Thane Brimhall (pennomi), laetissima, Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - https://opengameart.org/content/lpc-2-characters
+    - https://opengameart.org/content/lpc-gentleman
+
+- torso/jacket/collared/male/charcoal.png: by bluecarrot16. License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-gentleman
+    - https://opengameart.org/content/lpc-pirates
+
+- cape/solid/female/red.png: by bluecarrot16, JaidynReiman. License(s): OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more
+    - https://opengameart.org/content/lpc-roman-armor
+    - http://opengameart.org/content/lpc-clothing-updates
+
+- cape/solid_behind/red.png: by Nila122, JaidynReiman. License(s): OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more
+    - https://opengameart.org/content/lpc-roman-armor
+
+- torso/waist/belt_leather/male/charcoal.png: by bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-combat-armor-for-women
+    - https://opengameart.org/content/lpc-pirates
+
+- legs/pants/male/charcoal.png: by bluecarrot16, JaidynReiman, Joe White, Matthew Krohn (makrohn), Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+
+- feet/shoes/male/black.png: by bluecarrot16, Johannes Sjölund (wulax). License(s): OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - http://opengameart.org/content/lpc-clothing-updates

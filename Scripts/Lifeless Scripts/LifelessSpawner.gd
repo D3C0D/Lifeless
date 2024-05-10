@@ -15,21 +15,30 @@ var lifeless = preload("res://Objects/Lifeless.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	default_folders = list_lifeless_Skins(default_path)
+	default_folders = global.default_lifeless
 	user_created_folders = list_lifeless_Skins(user_created_path)
 
 func list_lifeless_Skins(dir_path):
-	# Open the directory and return all subfolders
+    # Open the directory and return all subfolders
 	if DirAccess.dir_exists_absolute(dir_path):
 		var dir = DirAccess.open(dir_path)
 		var subdirectories = dir.get_directories()
-		return subdirectories
+        
+		var results = []
+		for skin in subdirectories:
+			print(dir_path + skin + "/" + skin + ".json")
+			var json_file = dir_path + skin + "/" + skin + ".json"
+			var png_file = dir_path + skin + "/" + skin + ".png"
+
+			if FileAccess.file_exists(json_file) and FileAccess.file_exists(png_file):
+				results.append(skin)
+        
+		return results
 	return []
 
 func create_lifeless(is_user_created, full_name):
 	# Instanciate the new lifeless
 	var temp_lifeless = lifeless.instantiate()
-	get_tree().root.get_child(0).add_child(temp_lifeless)
 	
 	# set the directory depending on user create
 	var directory : String

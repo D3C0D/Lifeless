@@ -10,7 +10,7 @@ extends Control
 var current_lifeless : Lifeless
 
 # Scale value
-var scale_factor = Vector2(2, 2)
+var scale_factor = Vector2(3, 3)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -39,6 +39,7 @@ func _on_spawn_lifeless_pressed():
 		current_lifeless.queue_free()
 	var selected_index = selected_lifeless.get_item_index(selected_lifeless.get_selected_id())
 	current_lifeless = (lifeless_spawner as LifelessSpawner).create_lifeless(selected_lifeless.get_selected_metadata(), selected_lifeless.get_item_text(selected_index).replace(" ", "_"))
+	get_tree().root.get_node("GameTest").add_child(current_lifeless)
 	current_lifeless.scale = scale_factor
 
 func _on_animation_select_item_selected(index:int):

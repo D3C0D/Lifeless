@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cxi5sixfxeacx"]
+
+[node name="ChatMessage" type="VBoxContainer"]
+offset_left = -250.0
+offset_right = 250.0
+offset_bottom = 102.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Role" type="Label" parent="."]
+layout_mode = 2
+text = "System"
+
+[node name="Message" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(500, 75)
+layout_mode = 2
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, risus et finibus bibendum, libero turpis tincidunt sapien, quis tempor lectus velit nec neque. Pellentesque sit amet quam aliquam, mattis augue vel, auctor magna. Vestibulum sapien turpis, tincidunt a pretium ut, fermentum ac mauris. Mauris sed metus lacinia, auctor risus eu, consectetur metus. Phasellus a nisl nec justo pellentesque tincidunt vitae nec enim. Aliquam volutpat nulla ut risus mattis rutrum. Sed non facilisis nunc. Donec eu eros consectetur, laoreet neque eu, lacinia neque. Integer viverra placerat lorem, quis commodo nibh ultrices eu. Aliquam erat volutpat. Suspendisse nisl justo, dapibus eget hendrerit ac, sollicitudin et est. Proin nec dapibus magna. Donec interdum aliquam accumsan.
+
+In porttitor ultricies dolor sed faucibus. Integer aliquet, erat nec viverra accumsan, mi quam viverra augue, eu venenatis augue quam et mi. Nulla ut metus maximus, elementum mauris cursus, volutpat enim. Vestibulum nec ex dui. Mauris sapien lorem, molestie ut euismod id, sollicitudin a lectus. Proin vulputate massa nec viverra dapibus. Integer ante est, mollis semper pharetra mattis, varius vitae arcu. Fusce efficitur mauris ac dui porta, ac facilisis arcu egestas. Cras tincidunt velit porttitor purus placerat, ut ultricies tellus lacinia. Duis nisi tellus, mattis fringilla nisi in, rhoncus suscipit neque. Donec in pulvinar ipsum, quis pretium felis. Integer feugiat ante at ornare fringilla. Morbi commodo dignissim nisl, elementum facilisis ante suscipit vitae. Vivamus cursus nunc ante, eu varius ante imperdiet ut. Suspendisse tellus ligula, dictum ut felis ut, consectetur semper sapien. Mauris sit amet purus eleifend, facilisis dui in, pharetra metus.
+
+Morbi porttitor tellus sed venenatis fermentum. Vivamus condimentum rhoncus neque, ac dignissim justo faucibus non. Quisque euismod mi nibh, non rhoncus odio pretium non. Nunc eleifend fermentum urna et aliquet. Nunc ut elementum arcu, vel condimentum sapien. Sed non posuere magna. Curabitur fringilla sit amet felis eget consectetur. Fusce sit amet neque mattis, dapibus purus sit amet, facilisis nibh. Suspendisse quis turpis est. Mauris scelerisque ligula eu ligula placerat, et hendrerit felis congue. Integer porta, risus nec aliquam viverra, elit arcu congue tellus, et ultricies leo augue et lectus. Mauris ut tellus sit amet lacus hendrerit semper quis in ipsum. Curabitur sagittis nisi felis, ut vulputate orci molestie eget. Ut tincidunt, orci vitae rutrum lobortis, tortor augue facilisis nisl, ut feugiat lorem magna at magna. Vivamus vitae sollicitudin libero.
+
+Integer faucibus tellus est, et dapibus arcu tempus at. Donec consectetur sagittis ornare. Phasellus ut dapibus lectus. Aenean facilisis nisi sit amet dui sollicitudin tincidunt. Duis cursus convallis lectus, vitae feugiat justo accumsan interdum. Nullam maximus arcu sit amet nibh fringilla, tristique luctus ligula rhoncus. Sed viverra consectetur imperdiet. Praesent vehicula fermentum sapien, vitae rutrum velit rhoncus eget. Proin a rhoncus elit. Pellentesque eu eros tellus. Mauris interdum purus vel aliquam placerat. Aenean tincidunt eget diam nec finibus.
+
+Sed ligula quam, ornare id ultrices vel, vehicula at sem. Integer eu lectus mattis, auctor augue sed, dignissim ipsum. Aliquam consequat quam in lacus auctor pretium. In ut odio sed ligula ultricies posuere a quis nulla. Donec aliquet purus quis volutpat elementum. Vivamus feugiat, metus a porta ultricies, nulla orci volutpat diam, eu viverra risus lorem non velit. Maecenas arcu quam, egestas nec sapien sit amet, eleifend viverra quam. Phasellus convallis eros vel orci varius, vel ultricies tortor porttitor. Fusce id luctus neque, nec accumsan sem. Integer id sem ex. Cras et tristique tellus. Nunc gravida vestibulum ex a condimentum. Aliquam congue dapibus orci, eu commodo metus scelerisque eget. Vivamus dictum ex eget risus facilisis rutrum. Morbi dictum vehicula condimentum. Suspendisse rhoncus est orci, in condimentum leo rhoncus vel. "
+fit_content = true
+scroll_active = false
+
+[node name="Background" type="ColorRect" parent="Message"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.231373, 0.176471, 0.333333, 1)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/UI/model_select.gd" id="1_vocrw"]
 [ext_resource type="Script" path="res://Scripts/UI/ChatUIController.gd" id="2_d6kx8"]
 [ext_resource type="Texture2D" uid="uid://b2k5pm8c0oaqn" path="res://Textures/loading-anim.png" id="3_y1tll"]
-[ext_resource type="Texture2D" uid="uid://c0a0oti18l3qo" path="res://Textures/avatar.png" id="4_6dylm"]
+[ext_resource type="Texture2D" uid="uid://dmwo04lncseqd" path="res://Textures/TestAvatar.png" id="4_eklbf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gra71"]
 atlas = ExtResource("3_y1tll")
@@ -127,7 +127,7 @@ frame_progress = 0.629453
 
 [node name="Avatar" type="Sprite2D" parent="UI/ChatUI"]
 position = Vector2(640, 256)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("4_6dylm")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_eklbf")
 
 [connection signal="pressed" from="UI/ChatUI/SendButton" to="UI/ChatUI" method="_on_send_button_pressed"]

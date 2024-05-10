@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf8m30hiti2k0"]
+
+[ext_resource type="Script" path="res://Scripts/Simulation/Player/Sentient.gd" id="1_bkdub"]
+[ext_resource type="PackedScene" uid="uid://dvv6rsibifsvg" path="res://Objects/Lifeless.tscn" id="1_kisxp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d20rk"]
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_741yq"]
+size = Vector2(32, 16)
+
+[node name="Sentient" type="Area2D"]
+position = Vector2(48, 48)
+script = ExtResource("1_bkdub")
+metadata/_edit_group_ = true
+
+[node name="SelectArea" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_d20rk")
+
+[node name="CollisionBox" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_741yq")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="Lifeless" parent="." instance=ExtResource("1_kisxp")]
+position = Vector2(0, -24)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

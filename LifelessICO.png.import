@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0a0oti18l3qo"
-path="res://.godot/imported/avatar.png-8b30fba092006e1314caf86144072721.ctex"
+uid="uid://dmc36woy0ly3e"
+path="res://.godot/imported/LifelessICO.png-e61faab808190eb8d025feda57795a6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/avatar.png"
-dest_files=["res://.godot/imported/avatar.png-8b30fba092006e1314caf86144072721.ctex"]
+source_file="res://LifelessICO.png"
+dest_files=["res://.godot/imported/LifelessICO.png-e61faab808190eb8d025feda57795a6c.ctex"]
 
 [params]
 

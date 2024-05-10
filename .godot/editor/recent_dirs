@@ -1,10 +1,14 @@
-res://Scenes
-res://Scripts/Simulation/System
+res://Textures
 res://Scripts/UI
+res://Scenes
+res://
+L:/Game Development/Engines/Godot v4.2.2
+L:/Game Development/Projects/Godot/Lifeless Binaries
+res://Scripts/Simulation/Player
+res://Objects
+res://Scripts/Simulation/System
+res://Scenes/ChatUI
 res://Simulation Worlds/Test
 C:/Users/Dalinar/AppData/Local/Programs/Microsoft VS Code
 res://Scripts/Lifeless Scripts
-res://Objects
-res://Textures
 res://Scripts
-res://

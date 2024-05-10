@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqinw3clufyk0"]
+[gd_scene load_steps=4 format=3 uid="uid://bqinw3clufyk0"]
 
 [ext_resource type="Script" path="res://Scripts/UI/TestingHub.gd" id="1_jfa04"]
+[ext_resource type="Texture2D" uid="uid://gjtoo1jfbfvk" path="res://Textures/github.png" id="2_7hawk"]
+[ext_resource type="Texture2D" uid="uid://bcpj5341bfax6" path="res://Textures/linkedin.png" id="3_ysyys"]
 
 [node name="TestingHub" type="Control"]
 layout_mode = 3
@@ -71,7 +73,37 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 38
 text = "Debugging Menu"
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 688.0
+offset_right = 441.0
+offset_bottom = 719.0
+text = "Copyright © 2024 AmeNoHi, D3C0D. All rights reserved."
+
+[node name="GitHubLink" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1232.0
+offset_top = 672.0
+offset_right = 1272.0
+offset_bottom = 712.0
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+icon = ExtResource("2_7hawk")
+flat = true
+
+[node name="LinkedInLink" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1184.0
+offset_top = 672.0
+offset_right = 1224.0
+offset_bottom = 712.0
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+icon = ExtResource("3_ysyys")
+flat = true
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/LifelessViewer" to="." method="_on_lifeless_viewer_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/LifelessCreator" to="." method="_on_lifeless_creator_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/TestAI" to="." method="_on_test_ai_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/TestMovement" to="." method="_on_test_movement_pressed"]
+[connection signal="button_down" from="GitHubLink" to="." method="_on_git_hub_link_button_down"]
+[connection signal="button_down" from="LinkedInLink" to="." method="_on_linked_in_link_button_down"]

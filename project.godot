@@ -11,21 +11,33 @@ config_version=5
 [application]
 
 config/name="Lifeless"
+config/description="A prototype to test what AI can add to the game experience."
+config/version="1.0"
 run/main_scene="res://Scenes/TestingHub.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="AmeNoHi/Lifeless"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.737255, 0.776471, 0.8, 1)
+boot_splash/image="res://Amenohi Logo(640x360) .png"
+config/icon="res://LifelessICO.png"
+config/windows_native_icon="res://LifelessICO.ico"
 
 [autoload]
 
 global="*res://Scripts/global_variables.gd"
-Heral="*res://Scripts/Simulation/System/HeraldSystem.gd"
+Herald="*res://Scripts/Simulation/System/HeraldSystem.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+
+[editor]
+
+export/convert_text_resources_to_binary=false
 
 [editor_plugins]
 
@@ -51,6 +63,26 @@ camera_zoom_in={
 camera_zoom_out={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":5,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+camera_move={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+chat_ui_send_message={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+debug_back_debug_menu={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194324,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+create_new_sentient={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(120, 17),"global_position":Vector2(124, 58),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 
