@@ -15,6 +15,9 @@ Welcome to the official GitHub repository for Lifeless, an experimental video ga
 
 ## How to Use
 
+### IMPORTANT Pre requisites
+Since the project uses [Ollama](https://github.com/ollama/ollama) as the "back-end" server for the AI models and processing, you will need to have it installed on your computer along with the models you want to use for testing. Otherwise, the project won't work correctly.
+
 ### Using Release Binaries
 
 1. **Download the Latest Release:**
