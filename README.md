@@ -6,6 +6,11 @@ You can also check the video talk on YouTube:
 
 [Lifeless: Video Game's New Era](https://youtu.be/bOgvexzz8dA)
 
+Or support the project with a comment on Itch.io:
+
+[Lifeless: Now we're talking!](https://amenohi.itch.io/lifeless)
+
+
 ## Table of Contents
 - [Project Description](#project-description)
 - [How to Use](#how-to-use)
