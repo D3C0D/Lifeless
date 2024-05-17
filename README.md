@@ -2,6 +2,10 @@
 
 Welcome to the official GitHub repository for Lifeless, an experimental video game prototype that leverages AI to enhance NPC interactions and improve player experience. This project demonstrates how AI can add depth and immersion to game worlds without significantly increasing development resources.
 
+You can also check the video talk on YouTube:
+
+[Lifeless: Video Game's New Era](https://youtu.be/bOgvexzz8dA)
+
 ## Table of Contents
 - [Project Description](#project-description)
 - [How to Use](#how-to-use)
