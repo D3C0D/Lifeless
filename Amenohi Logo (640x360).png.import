@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blj0n37bxr8st"
-path="res://.godot/imported/checker_bg.png-58ce6049a0f7908ee0be9891a30f5358.ctex"
+uid="uid://jgq15prw0gbc"
+path="res://.godot/imported/Amenohi Logo (640x360).png-10d42f415277cd038cf4d8aaab7feaf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/checker_bg.png"
-dest_files=["res://.godot/imported/checker_bg.png-58ce6049a0f7908ee0be9891a30f5358.ctex"]
+source_file="res://Amenohi Logo (640x360).png"
+dest_files=["res://.godot/imported/Amenohi Logo (640x360).png-10d42f415277cd038cf4d8aaab7feaf5.ctex"]
 
 [params]
 

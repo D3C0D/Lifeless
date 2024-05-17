@@ -28,15 +28,24 @@ func _ready():
 	for animation in LPCAnimatedSprite2D.LPCAnimation:
 		selected_animation.add_item(animation)
 
-func create_lifeless(temp_texture):
+func create_lifeless():
 	if current_lifeless:
 		current_lifeless.queue_free()
 	# Instanciate the new lifeless
 	current_lifeless = lifeless.instantiate()
 	get_tree().root.get_node("/root/LifelessCreator").add_child(current_lifeless)
+
+	# Add info to the lifeless
+	(current_lifeless as Lifeless).LifelessData = {
+		"Name": name_edit.text,
+		"Surname": surname_edit.text,
+		"Description": description_edit.text
+	}
+
+	(current_lifeless as Lifeless).is_user_created = true
 	
 	# Prompt to create the skin
-	(current_lifeless as Lifeless)._set_lifeless_skin(temp_texture)
+	(current_lifeless as Lifeless)._set_lifeless_skin()
 	(current_lifeless as Lifeless).position = center_of_screen
 	(current_lifeless as Lifeless).scale = scale_factor
 	how_to_label.visible = false
@@ -53,7 +62,6 @@ func _on_open_sprite_sheet_folder_pressed():
 		_send_notification("You must add a name and Surname first")
 		return
 	var temp_dir = user_created_path + name_edit.text + "_" + surname_edit.text
-	print(OS.get_user_data_dir(), "    ", temp_dir)
 	if not DirAccess.dir_exists_absolute(temp_dir):
 		DirAccess.make_dir_recursive_absolute(temp_dir)
 	OS.shell_open(ProjectSettings.globalize_path(temp_dir))
@@ -68,17 +76,11 @@ func _on_reload_skin_pressed():
 	var temp_dir = user_created_path + name_edit.text + "_" + surname_edit.text + "/"
 	var file_name = name_edit.text + "_" + surname_edit.text + ".png"
 	# Check directory exist, if not, create
-	if not DirAccess.dir_exists_absolute(temp_dir):
-		DirAccess.make_dir_absolute(temp_dir)
-	# Load image file
-	var temp_image = Image.load_from_file(temp_dir + file_name)
-	# Check of image was able to load
-	if not temp_image:
-		_send_notification("Image not found or can't be loaded")
+	if not FileAccess.file_exists(temp_dir + file_name):
+		_send_notification("Lifeless skin not found")
 		return
-	# Make a texture for the lifeless and create it
-	var temp_texture = ImageTexture.create_from_image(temp_image)
-	create_lifeless(temp_texture)
+	# Call to create a lifeless
+	create_lifeless()
 
 
 func _on_save_lifeless_pressed():

@@ -1,8 +1,1 @@
-res://Scripts/UI/ListAvailableLifeless.gd
 res://Scenes/Simulation.tscn
-res://Scripts/Simulation/Player/PlayerController.gd
-res://Scripts/Simulation/System/HeraldSystem.gd
-res://Scripts/Lifeless Scripts/LifelessController.gd
-res://Scripts/Lifeless Scripts/LifelessSpawner.gd
-res://Scripts/UI/SpawnLifelessUI.gd
-res://Scripts/Simulation/Player/Sentient.gd

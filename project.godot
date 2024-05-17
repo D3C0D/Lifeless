@@ -18,7 +18,9 @@ config/use_custom_user_dir=true
 config/custom_user_dir_name="AmeNoHi/Lifeless"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.737255, 0.776471, 0.8, 1)
-boot_splash/image="res://Amenohi Logo(640x360) .png"
+boot_splash/image="res://Amenohi Logo (640x360).png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://LifelessICO.png"
 config/windows_native_icon="res://LifelessICO.ico"
 

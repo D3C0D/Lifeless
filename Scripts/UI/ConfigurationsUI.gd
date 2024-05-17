@@ -6,6 +6,10 @@ extends Control
 @onready var address_text = $Address
 @onready var port_text = $Port
 
+func _ready():
+	address_text.text = global.address
+	port_text.text = global.port
+
 func _on_avaiblable_models_item_selected(index:int):
 	global.sentience_model = model_select.get_item_text(index)
 
