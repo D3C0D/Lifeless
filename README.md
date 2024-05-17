@@ -59,6 +59,18 @@ Since the project uses [Ollama](https://github.com/ollama/ollama) as the "back-e
 - **Menu Navigation:**
   - Press `Esc` to open the configuration menu.
   - Use `PgDn` to return to the debug menu from any module.
+ 
+- **Creating Lifeless:**
+  - Go to the Create Lifeless module.
+  - Once in there, add a name, surname and description.
+  - Create the sprite using the Universal LPC Spritesheet Character Generator.
+  - Once the JSON file and the PNG are on the Lifeless folder, hit the Save button.
+  - Done and ready!
+ 
+ - **Spawning a Lifeless:**
+   - Right Click on any walkable tile.
+   - Use the dropdown menu to select the Lifeless.
+   - Done!
 
 ## Technologies Used
 
